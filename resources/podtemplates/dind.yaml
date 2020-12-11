@@ -4,7 +4,7 @@ spec:
     alwaysPullImage: true
     args: cat
     command: /bin/sh -c
-    image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/aws-docker:latest
+    image: 385888483640.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/aws-docker:latest
   name: dind
   volumes:
   - hostPathVolume:
