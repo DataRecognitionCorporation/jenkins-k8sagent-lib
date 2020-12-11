@@ -1,0 +1,39 @@
+spec:
+- containers:
+  - alwaysPullImage: true
+    args: ^${computer.jnlpmac} ^${computer.name}
+    command: ""
+    envVars:
+    - envVar:
+        key: JENKINS_URL
+        value: http://{{ template "jenkins.fullname" . }}.{{ template "jenkins.namespace" . }}.svc.{{.Values.clusterZone}}:{{.Values.master.servicePort}}{{ default "/" .Values.master.jenkinsUriPrefix }}
+    image: 385888483640.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:latest
+    livenessProbe:
+      failureThreshold: 0
+      initialDelaySeconds: 0
+      periodSeconds: 0
+      successThreshold: 0
+      timeoutSeconds: 0
+    name: jnlp
+    resourceLimitCpu: 2000m
+    resourceLimitMemory: 8Gi
+    resourceRequestCpu: 1500m
+    resourceRequestMemory: 4Gi
+    workingDir: /home/jenkins/agent
+  hostNetwork: false
+  idleMinutes: 5
+  idleMinutesStr: "5"
+  label: coel7_agent_aws aws role_prod
+  name: puppet-agent-aws
+  podRetention: onFailure
+  serviceAccount: {{ include "jenkins.serviceAccountAgentName" . }}
+  yaml: |
+    spec:
+      securityContext:
+        fsGroup: 65534
+  yamlMergeStrategy: override
+  yamls:
+  - |
+    spec:
+      securityContext:
+        fsGroup: 65534

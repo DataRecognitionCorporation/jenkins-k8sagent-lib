@@ -3,7 +3,8 @@ spec:
   - name: jnlp
     resources:
       limits:
-        memory: 8Gi
+        cpu: 512m
+        memory: 4096Mi
       requests:
-        memory: 4Gi
-        cpu: 2
+        cpu: 512m
+        memory: 2048Mi
