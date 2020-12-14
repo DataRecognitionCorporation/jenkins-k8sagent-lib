@@ -1,6 +1,7 @@
 spec:
   containers:
-  - name: jnlp
+  - alwaysPullImage: true
+    name: jnlp
     image: jenkins/jnlp-slave:3.40-1-jdk11
     resources:
       limits:
