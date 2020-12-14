@@ -10,8 +10,10 @@ spec:
         cpu: 512m
         memory: 1024Mi
     tty: true
-    securityContext:
-      fsGroup: 65534
+    yaml: |
+          spec:
+            securityContext:
+              fsGroup: 65534
   name: dind
   label: dind
     
