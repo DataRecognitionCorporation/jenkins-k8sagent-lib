@@ -1,6 +1,5 @@
 spec:
   containers:
-  - name: jnlp
   - name: dind
     image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/aws-docker:latest
     resources:
@@ -10,6 +9,9 @@ spec:
       requests:
         cpu: 512m
         memory: 1024Mi
+    tty: true
+    securityContext:
+      fsGroup: 65534
   name: dind
   label: dind
     
