@@ -9,6 +9,5 @@ spec:
       requests:
         cpu: 512m
         memory: 1024Mi
-    workingDir: /home/jenkins/agent
   label: base
   name: base
