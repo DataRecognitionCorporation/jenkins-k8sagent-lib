@@ -1,5 +1,5 @@
 spec:
-- containers:
+  containers:
   - name: jnlp
     image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:latest
     resources:
@@ -9,3 +9,5 @@ spec:
       requests:
         cpu: 1500m
         memory: 4Gi
+  label: puppet
+  name: puppet
