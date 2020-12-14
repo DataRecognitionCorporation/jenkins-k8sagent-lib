@@ -2,7 +2,6 @@ spec:
   containers:
   - alwaysPullImage: true
     image: jenkins/jnlp-slave:3.40-1-jdk11
-    name: jnlp
     resources:
       limits:
         cpu: 512m
