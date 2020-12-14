@@ -1,6 +1,6 @@
 spec:
   containers:
-  - name: jnlp
+  - name: base
     image: jenkins/jnlp-slave:3.40-1-jdk11
     resources:
       limits:
