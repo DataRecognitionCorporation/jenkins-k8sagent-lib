@@ -1,16 +1,15 @@
 spec:
   containers:
+  - name: jnlp
   - name: dind
     image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/aws-docker:latest
     resources:
       limits:
-        cpu: 1000m
+        cpu: 512m
         memory: 2048Mi
       requests:
-        cpu: 1000m
+        cpu: 512m
         memory: 1024Mi
-  - name: jnlp
-    image: jenkins/jnlp-slave
   name: dind
   label: dind
     
