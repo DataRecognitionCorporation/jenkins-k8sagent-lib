@@ -10,5 +10,4 @@ spec:
       requests:
         cpu: 1500m
         memory: 4Gi
-  label: coel7_agent_aws aws role_prod
   name: puppetagentaws
