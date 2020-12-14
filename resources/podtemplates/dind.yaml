@@ -1,6 +1,6 @@
 spec:
   containers:
-  - alwaysPullImage: true
+  - name: dind
     image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/aws-docker:latest
-    name: jnlp
+  - name: jnlp
     
