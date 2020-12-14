@@ -2,8 +2,6 @@ spec:
   containers:
   - name: dind
     image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/aws-docker:latest
-  initContainers:
-  - name: jnlp
   name: dind
   label: dind
     
