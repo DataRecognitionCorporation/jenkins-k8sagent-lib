@@ -1,9 +1,9 @@
 spec:
   containers:
-  - name: jnlp
-    inheritFrom: default-agent
   - name: dind
     image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/aws-docker:latest
+  - name: jnlp
+    image: jenkins/jnlp-slave
   name: dind
   label: dind
     
