@@ -2,7 +2,7 @@ spec:
   containers:
   - alwaysPullImage: true
     image: node
-    name: node
+    name: jnlp
     resources:
       limits:
         cpu: 512m
