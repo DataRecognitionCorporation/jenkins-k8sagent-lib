@@ -1,7 +1,7 @@
 spec:
 - containers:
   - alwaysPullImage: true
-    image: 385888483640.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:latest
+    image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:latest
     name: jnlp
     resources:
       limits:
