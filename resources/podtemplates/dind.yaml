@@ -10,16 +10,8 @@ spec:
         cpu: 512m
         memory: 1024Mi
     tty: true
-    yaml: |
-          spec:
-            securityContext:
-              fsGroup: 65534
-    yamlMergeStrategy: override
-    yamls:
-        - |
-          spec:
-            securityContext:
-              fsGroup: 65534
+    securityContext:
+      privileged: true
   name: dind
   label: dind
     
