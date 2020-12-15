@@ -12,5 +12,5 @@ spec:
     tty: true
     securityContext:
       privileged: true
-  label: coel7_agent_aws aws role_prod
+  label: puppet
   name: puppet
