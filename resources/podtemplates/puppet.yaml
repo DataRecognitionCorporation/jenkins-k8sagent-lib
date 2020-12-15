@@ -4,10 +4,13 @@ spec:
     image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:latest
     resources:
       limits:
-        cpu: 2000m
-        memory: 8Gi
-      requests:
-        cpu: 1500m
+        cpu: 1000m
         memory: 4Gi
+      requests:
+        cpu: 500m
+        memory: 4Gi
+    tty: true
+    securityContext:
+      privileged: true
   label: puppet
   name: puppet
