@@ -9,7 +9,7 @@ spec:
       requests:
         cpu: 500m
         memory: 4Gi
-    tty: true
+    # tty: true
     securityContext:
       privileged: true
   label: puppet

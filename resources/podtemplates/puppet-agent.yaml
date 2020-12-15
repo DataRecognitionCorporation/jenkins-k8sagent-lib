@@ -2,7 +2,6 @@ spec:
 - containers:
   - alwaysPullImage: true
     image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:latest
-    name: jnlp
     resources:
       limits:
         cpu: 1024m
