@@ -9,9 +9,8 @@ spec:
       requests:
         cpu: 512m
         memory: 1024Mi
-    # tty: true
+    tty: true
     securityContext:
       privileged: true
   name: dind
   label: dind
-    
