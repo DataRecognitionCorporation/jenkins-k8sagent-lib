@@ -9,9 +9,9 @@ spec:
       requests:
         cpu: 500m
         memory: 4Gi
-    tty: true
+    # tty: true
     securityContext:
       privileged: true
-  hostNetwork: false
+  # hostNetwork: false
   label: puppet
   name: puppet
