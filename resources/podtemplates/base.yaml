@@ -1,0 +1,6 @@
+spec:
+  containers:
+  - name: jnlp
+    tty: true
+    securityContext:
+      privileged: true
