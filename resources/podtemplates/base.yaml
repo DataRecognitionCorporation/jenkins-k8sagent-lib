@@ -1,7 +1,7 @@
 spec:
   containers:
   - name: base
-    image: jenkins/jnlp-slave:3.40-1-jdk11
+    image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/jnlp-slave:3.40-1-jdk11
     resources:
       limits:
         cpu: 1000m
