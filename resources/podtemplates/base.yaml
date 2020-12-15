@@ -9,8 +9,8 @@ spec:
       requests:
         cpu: 1000m
         memory: 1024Mi
-    tty: true
-    securityContext:
-      privileged: true
+    # tty: true
+    # securityContext:
+    #   privileged: true
   label: base
   name: base
