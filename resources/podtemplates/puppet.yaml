@@ -12,6 +12,6 @@ spec:
     tty: true
     securityContext:
       privileged: true
-  # hostNetwork: false
+  hostNetwork: false
   name: puppet
   label: puppet
