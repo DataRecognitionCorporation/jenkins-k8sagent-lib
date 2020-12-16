@@ -9,9 +9,10 @@ spec:
       requests:
         cpu: 1500m
         memory: 2Gi
-    tty: true
+    # tty: true
     securityContext:
       privileged: true
+    idleMinutes: 5
   # hostNetwork: false
   name: puppet
   label: puppet 
