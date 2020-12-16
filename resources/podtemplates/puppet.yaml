@@ -1,14 +1,14 @@
 spec:
   containers:
   - name: puppet
-    image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:latest
+    image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:newer
     resources:
       limits:
-        cpu: 1000m
-        memory: 2Gi
+        cpu: 1024m
+        memory: 4096Mi
       requests:
-        cpu: 500m
-        memory: 2Gi
+        cpu: 512m
+        memory: 2048Mi
     tty: true
     securityContext:
       privileged: true
