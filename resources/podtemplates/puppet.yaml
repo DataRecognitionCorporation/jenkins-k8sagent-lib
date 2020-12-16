@@ -1,7 +1,7 @@
 spec:
   containers:
   - name: puppet
-    image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:latest
+    image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:v0.5.0
     resources:
       limits:
         cpu: 1024m
@@ -14,4 +14,5 @@ spec:
       privileged: true
   # hostNetwork: false
   name: puppet
-  # label: coel7_agent_aws aws role_prod
+  label: puppet 
+  # coel7_agent_aws aws role_prod
