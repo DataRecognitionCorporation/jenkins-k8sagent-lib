@@ -5,13 +5,13 @@ spec:
     resources:
       limits:
         cpu: 1024m
-        memory: 4096Mi
+        memory: 2048Mi
       requests:
         cpu: 512m
-        memory: 2048Mi
+        memory: 1024Mi
     tty: true
     securityContext:
       privileged: true
-  hostNetwork: false
+  # hostNetwork: false
   name: puppet
   label: puppet
