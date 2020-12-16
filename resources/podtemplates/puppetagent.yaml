@@ -1,7 +1,7 @@
 spec:
   containers:
   - name: puppetagent
-    image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:newer
+    image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:latest
     resources:
       limits:
         cpu: 2000m
