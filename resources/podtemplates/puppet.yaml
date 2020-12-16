@@ -12,8 +12,8 @@ spec:
     # tty: true
     # securityContext:
     #   privileged: true
-    idleMinutes: 5
-  # hostNetwork: false
+  # idleMinutes: 5
+  hostNetwork: false
   name: puppet
-  label: puppet 
+  # label: puppet 
   # coel7_agent_aws aws role_prod
