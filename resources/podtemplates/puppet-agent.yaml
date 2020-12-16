@@ -1,14 +1,19 @@
 spec:
-- containers:
-  - alwaysPullImage: true
+  containers:
+  - name: puppet-agent
     image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:latest
     resources:
       limits:
-        cpu: 1024m
-        memory: 4096Mi
+        cpu: 2000m
+        memory: 4Gi
       requests:
-        cpu: 512m
-        memory: 2048Mi
-  hostNetwork: false
-  label: coel7_agent
+        cpu: 1500m
+        memory: 2Gi
+    tty: true
+    securityContext:
+      privileged: true
+  # idleMinutes: 5
+  # hostNetwork: false
   name: puppet-agent
+  label: coel7_agent
+  # coel7_agent_aws aws role_prod
