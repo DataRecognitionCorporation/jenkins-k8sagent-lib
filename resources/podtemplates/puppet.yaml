@@ -1,6 +1,6 @@
 spec:
   containers:
-  - name: jnlp
+  - name: puppet
     image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:latest
     resources:
       limits:
@@ -12,6 +12,6 @@ spec:
     tty: true
     securityContext:
       privileged: true
-  hostNetwork: false
+  # hostNetwork: false
   name: puppet
   # label: coel7_agent_aws aws role_prod
