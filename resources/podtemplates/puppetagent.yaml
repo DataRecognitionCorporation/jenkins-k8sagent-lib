@@ -1,6 +1,6 @@
 spec:
   containers:
-  - name: puppet-agent
+  - name: puppetagent
     image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:latest
     resources:
       limits:
@@ -14,6 +14,6 @@ spec:
       privileged: true
   # idleMinutes: 5
   # hostNetwork: false
-  name: puppet-agent
+  name: puppetagent
   label: coel7_agent
   # coel7_agent_aws aws role_prod
