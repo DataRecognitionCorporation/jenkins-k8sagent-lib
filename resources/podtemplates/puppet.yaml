@@ -1,6 +1,5 @@
 spec:
   containers:
-  - name: puppet
     image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:latest
     resources:
       limits:
