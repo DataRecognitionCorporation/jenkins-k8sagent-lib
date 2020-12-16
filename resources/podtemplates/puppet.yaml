@@ -1,7 +1,7 @@
 spec:
   containers:
   - name: puppet
-    image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:v0.5.1
+    image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:latest
     resources:
       limits:
         cpu: 2000m
@@ -11,9 +11,9 @@ spec:
         memory: 2Gi
     # tty: true
     securityContext:
-      privileged: true
+      fsGroup: 65534
   # idleMinutes: 5
   # hostNetwork: false
   name: puppet
-  # label: puppet 
+  label: puppet 
   # coel7_agent_aws aws role_prod
