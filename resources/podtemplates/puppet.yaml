@@ -13,4 +13,4 @@ spec:
       privileged: true
   hostNetwork: false
   name: puppet
-  label: coel7_agent_aws aws role_prod
+  # label: coel7_agent_aws aws role_prod
