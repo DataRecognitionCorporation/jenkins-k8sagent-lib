@@ -13,6 +13,7 @@ spec:
     tty: true
     securityContext:
       privileged: true
+      fsGroup: 65534
   # idleMinutes: 5
   # hostNetwork: false
   name: puppetagent
