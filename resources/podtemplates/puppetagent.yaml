@@ -1,6 +1,7 @@
 spec:
   containers:
   - name: puppetagent
+    labels: coel7_agent
     image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:template
     args: ["tail","-f","/dev/null"]
     resources:
