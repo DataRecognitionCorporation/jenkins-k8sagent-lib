@@ -13,11 +13,7 @@ spec:
     tty: true
     securityContext:
       privileged: true
-      # allowPrivilegeEscalation: false
-  # idleMinutes: 5
-  # hostNetwork: false
   securityContext:
     fsGroup: 65534
   name: puppetagent
-  label: coel7_agent
-  # coel7_agent_aws aws role_prod
+  labels: coel7_agent

@@ -1,6 +1,5 @@
 spec:
   containers:
-  - name: jnlp
     resources:
       limits:
         cpu: 2000m
