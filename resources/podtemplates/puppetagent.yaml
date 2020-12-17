@@ -16,5 +16,5 @@ spec:
       privileged: true
   securityContext:
     fsGroup: 65534
-  name: puppetagent
+  # name: puppetagent
   labels: coel7_agent
