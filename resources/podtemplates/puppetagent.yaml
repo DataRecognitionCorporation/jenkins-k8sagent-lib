@@ -17,4 +17,5 @@ spec:
   securityContext:
     fsGroup: 65534
   name: puppetagent
-  labels: coel7_agent
+  labels: 
+    app.kubernetes.io/name: coel7_agent
