@@ -18,4 +18,4 @@ spec:
     fsGroup: 65534
   name: puppetagent
   labels: 
-    app.kubernetes.io/name: coel7_agent
+    jenkins/label: coel7_agent
