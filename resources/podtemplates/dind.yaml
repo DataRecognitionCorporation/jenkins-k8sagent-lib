@@ -12,5 +12,3 @@ spec:
     tty: true
     securityContext:
       privileged: true
-  name: dind
-  label: dind
