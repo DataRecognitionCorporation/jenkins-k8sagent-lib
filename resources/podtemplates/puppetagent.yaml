@@ -1,7 +1,7 @@
 spec:
   containers:
   - name: puppetagent
-    label: coel7_agent_aws aws role_prod
+    label: puppetagent
     alwaysPullImage: true
     image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:template
     args: ["tail","-f","/dev/null"]
