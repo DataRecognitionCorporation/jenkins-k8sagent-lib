@@ -1,6 +1,7 @@
 spec:
   containers:
   - name: puppetagent
+    label: coel7_agent_aws aws role_prod
     alwaysPullImage: true
     image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:template
     args: ["tail","-f","/dev/null"]
@@ -16,6 +17,3 @@ spec:
       privileged: true
   securityContext:
     fsGroup: 65534
-  name: puppetagent
-  labels: 
-    jenkins/label: coel7_agent
