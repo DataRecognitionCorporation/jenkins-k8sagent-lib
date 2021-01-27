@@ -1,5 +1,6 @@
 spec:
   containers:
+  - name: large
     resources:
       limits:
         cpu: 2000m

@@ -1,5 +1,6 @@
 spec:
   containers:
+  - name: small
     resources:
       limits:
         cpu: 512m
