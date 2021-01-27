@@ -1,7 +1,6 @@
 spec:
   containers:
-  - name: puppetagent
-    label: puppetagent
+  - name: jnlp
     alwaysPullImage: true
     image: 177429746880.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:template
     args: ["tail","-f","/dev/null"]
