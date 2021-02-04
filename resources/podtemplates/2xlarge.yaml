@@ -1,0 +1,10 @@
+spec:
+  containers:
+  - name: jnlp
+    resources:
+      limits:
+        cpu: 8000m
+        memory: 38400Mi
+      requests:
+        cpu: 8000m
+        memory: 32Gi
