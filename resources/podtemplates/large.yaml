@@ -1,6 +1,7 @@
 spec:
   containers:
   - name: jnlp
+  - label: coel7_agent_aws aws role_prod large
     resources:
       limits:
         cpu: 2000m
