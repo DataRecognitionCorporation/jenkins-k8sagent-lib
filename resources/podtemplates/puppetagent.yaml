@@ -3,7 +3,7 @@ spec:
   containers:
   - name: puppetagent
     alwaysPullImage: true
-    image: "333509430799.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet"
+    image: "333509430799.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:latest"
     resources:
       limits:
         cpu: 2000m
