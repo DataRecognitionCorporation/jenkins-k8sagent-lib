@@ -1,4 +1,6 @@
 spec:
+  name: puppetagent
+  label: coel7_agent_aws
   containers:
   - name: puppetagent
     alwaysPullImage: true
