@@ -2,7 +2,7 @@ spec:
   name: puppetagent
   label: coel7_agent_aws
   containers:
-  - name: puppet_agent
+  - name: puppet-agent
     alwaysPullImage: true
     image: "333509430799.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:template"
     args: ["tail","-f","/dev/null"]
