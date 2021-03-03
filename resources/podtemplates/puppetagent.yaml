@@ -1,11 +1,15 @@
 spec:
   name: puppetagent
-  label: puppetagent
+  label: coel7_agent_aws
   containers:
   - name: puppetagent
     alwaysPullImage: true
     image: "333509430799.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet:template"
     args: ["tail","-f","/dev/null"]
+    tty: true
+    securityContext:
+      privileged: true
+  - name: jnlp
     resources:
       limits:
         cpu: 2000m
@@ -13,8 +17,5 @@ spec:
       requests:
         cpu: 1000m
         memory: 2Gi
-    tty: true
-    securityContext:
-      privileged: true
   securityContext:
     fsGroup: 65534
