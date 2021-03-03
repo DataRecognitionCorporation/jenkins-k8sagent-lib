@@ -1,5 +1,4 @@
 spec:
-  label: puppetagent
   containers:
   - name: puppetagent
     alwaysPullImage: true
