@@ -1,3 +1,13 @@
 spec:
+  label: puppetagent
   containers:
-  - name: puppet-agent-aws
+  - name: puppetagent
+    alwaysPullImage: true
+    image: "333509430799.dkr.ecr.us-east-1.amazonaws.com/jenkins/agent/puppet"
+    resources:
+      limits:
+        cpu: 2000m
+        memory: 4Gi
+      requests:
+        cpu: 1000m
+        memory: 2Gi
